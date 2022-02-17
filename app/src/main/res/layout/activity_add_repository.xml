@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRepository">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner/Organisation"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="7dp"
+            android:id="@+id/owner"
+            android:cursorVisible="false"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/addbtn_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repo Name"
+            android:textSize="24sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/repo"
+            android:background="@drawable/addbtn_back"
+            android:cursorVisible="false"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="7dp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addrep"
+        android:textSize="22sp"
+        android:paddingVertical="14dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"/>
+
+
+</RelativeLayout>
