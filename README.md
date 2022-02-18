@@ -43,3 +43,13 @@ Before installation, please make sure you have already installed the following t
 2. Clone the project using Github Desktop/Url
 3. Open the project in Android Studio
 4. Click on Run
+
+# 👨 Made By
+`Ayush Mishra`
+**Connect with me on**
+</br>
+</br>
+[![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/ayush8385)
+[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/ayush8385/)
+[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:am838578@gmail.com)
+
