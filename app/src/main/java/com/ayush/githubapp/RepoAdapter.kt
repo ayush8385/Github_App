@@ -11,8 +11,9 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ayush.githubapp.Model.Repos
+import com.ayush.hungreed.database.ReposEntity
 
-class RepoAdapter(val context: Context,val itemlist:ArrayList<Repos>) : RecyclerView.Adapter<RepoAdapter.HomeViewHolder>(){
+class RepoAdapter(val context: Context,val itemlist:ArrayList<ReposEntity>) : RecyclerView.Adapter<RepoAdapter.HomeViewHolder>(){
     class HomeViewHolder(view: View): RecyclerView.ViewHolder(view){
         val name:TextView=view.findViewById(R.id.repo_name)
         val desc:TextView=view.findViewById(R.id.repo_desc)
@@ -29,11 +30,11 @@ class RepoAdapter(val context: Context,val itemlist:ArrayList<Repos>) : Recycler
 
     override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
         val repo = itemlist[position]
-        holder.name.text=repo.name
-        holder.desc.text=repo.desc
+        holder.name.text=repo.repoName
+        holder.desc.text=repo.repoDesc
 
         holder.details.setOnClickListener {
-            context.startActivity(Intent(context, Details::class.java))
+            context.startActivity(Intent(context, Details::class.java).putExtra("id",repo.repoId))
         }
 
         holder.share.setOnClickListener {
@@ -41,7 +42,7 @@ class RepoAdapter(val context: Context,val itemlist:ArrayList<Repos>) : Recycler
                 val shareIntent = Intent(Intent.ACTION_SEND)
                 shareIntent.type = "text/plain"
                 shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Github Browser")
-                var shareMessage = "\nLet me recommend you this application\n\n"
+                var shareMessage = "Visit this Repo on github named as ${repo.repoName} : ${repo.repoDesc}\n${repo.repoUrl}"
 
                 shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
                 context.startActivity(Intent.createChooser(shareIntent, "choose one"))

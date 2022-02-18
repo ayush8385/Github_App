@@ -13,6 +13,8 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.ayush.githubapp.Model.Repos
+import com.ayush.hungreed.database.ReposEntity
+import com.digitalhain.daipsisearch.Activities.Room.ReposViewModel
 
 
 class AddRepository : AppCompatActivity() {
@@ -37,6 +39,7 @@ class AddRepository : AppCompatActivity() {
 
             val jsonObjectRequest=object : JsonObjectRequest(Method.GET,url,null, Response.Listener {
                 try{
+                    ReposViewModel(application).insertRepo(ReposEntity(it.getString("id"),ownername.text.toString(),it.getString("name"),it.getString("description"),it.getString("html_url"),it.getInt("open_issues")))
                     finish()
                 }
                 catch (e:Exception){

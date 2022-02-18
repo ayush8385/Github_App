@@ -4,11 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/drawable/addbtn_back.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/drawable/rembtn_back.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/drawable/stroke_back.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/layout/activity_add_repository.xml" value="0.1" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/layout/activity_commits.xml" value="0.259375" />
         <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/layout/activity_details.xml" value="0.20989583333333334" />
         <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/layout/activity_splash.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/layout/branch_list.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/layout/commit_list.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/layout/issue_list.xml" value="0.259375" />
         <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/layout/repo_list.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/menu/details_menu.xml" value="0.259375" />
         <entry key="..\:/Users/AYUSH MISHRA/Desktop/GithubApp/app/src/main/res/menu/menu.xml" value="0.259375" />
       </map>
     </option>

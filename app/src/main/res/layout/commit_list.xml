@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:background="@drawable/stroke_back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:layout_alignParentLeft="true"
+            android:text="10 Mar 21"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sha"
+            android:text="ad907n"
+            android:paddingHorizontal="10dp"
+            android:layout_alignParentRight="true"
+            android:background="#13C1B0"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayush Mishra i a s goog boy hea sa is too good sabsa nsjshdbds bhdsvfdsfbd fvdshfvdsf dsfdnfbdhbfhdbfhdsbd ndbfhfbhdbfhdf "
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:textSize="17sp"
+        android:id="@+id/commit_desc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@color/black"
+            android:id="@+id/commit_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commit_name"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:text="User Name"/>
+    </LinearLayout>
+
+
+</LinearLayout>

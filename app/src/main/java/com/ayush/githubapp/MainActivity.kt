@@ -12,6 +12,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Response
@@ -19,12 +20,15 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.ayush.githubapp.Model.Repos
+import com.ayush.hungreed.database.ReposEntity
+import com.digitalhain.daipsisearch.Activities.Room.ReposViewModel
 import org.json.JSONArray
 import java.lang.reflect.Method
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
     lateinit var addRepo:Button
-    var allrepos= arrayListOf<Repos>()
+    var listrepos= arrayListOf<ReposEntity>()
     lateinit var recyclerView: RecyclerView
     lateinit var layoutManager:RecyclerView.LayoutManager
     lateinit var repoadapter:RepoAdapter
@@ -46,16 +50,45 @@ class MainActivity : AppCompatActivity() {
         layoutManager = LinearLayoutManager(this)
 
 
-        val url="https://api.github.com/repos/ayush8385/Flow"
-        val queue= Volley.newRequestQueue(this)
+//        val url="https://api.github.com/repos/JetBrains/kotlin"
+//        val queue= Volley.newRequestQueue(this)
+//
+//        val jsonObjectRequest=object : JsonObjectRequest(Method.GET,url,null, Response.Listener {
+//            try{
+//                val repoobj = ReposEntity(it.getString("id"),"JetBrains",it.getString("name"),it.getString("description"),it.getString("html_url"),it.getInt("open_issues"))
+//
+//                listrepos.add(repoobj)
+//
+//                if(listrepos.isEmpty()){
+//                    addRepo.visibility=View.VISIBLE
+//                    tracktext.visibility=View.VISIBLE
+//                }
+//                else{
+//                    addRepo.visibility=View.GONE
+//                    tracktext.visibility=View.GONE
+//                }
+//
+//                ReposViewModel(application).insertRepo(repoobj)
+//
+//
+//
+//            }
+//            catch (e:Exception){
+//                Toast.makeText(applicationContext,"Error Occurred", Toast.LENGTH_SHORT).show()
+//            }
+//        }, Response.ErrorListener {
+//            Toast.makeText(this, "Volley error occurred!!!", Toast.LENGTH_SHORT).show()
+//        }){}
+//        queue.add(jsonObjectRequest)
 
-        val jsonObjectRequest=object : JsonObjectRequest(Method.GET,url,null, Response.Listener {
-            try{
-                val repoobj = Repos(it.getString("name"),it.getString("description"))
 
-                allrepos.add(repoobj)
+        ReposViewModel(application).allRepos.observe(this, Observer {list->
+            list?.let {
 
-                if(allrepos.isEmpty()){
+                listrepos.clear()
+                listrepos.addAll(list)
+
+                if(listrepos.isEmpty()){
                     addRepo.visibility=View.VISIBLE
                     tracktext.visibility=View.VISIBLE
                 }
@@ -64,18 +97,11 @@ class MainActivity : AppCompatActivity() {
                     tracktext.visibility=View.GONE
                 }
 
-                repoadapter= RepoAdapter(this,allrepos)
+                repoadapter= RepoAdapter(this,listrepos)
                 recyclerView.adapter=repoadapter
                 recyclerView.layoutManager=layoutManager
-
             }
-            catch (e:Exception){
-                Toast.makeText(applicationContext,"Error Occurred", Toast.LENGTH_SHORT).show()
-            }
-        }, Response.ErrorListener {
-            Toast.makeText(this, "Volley error occurred!!!", Toast.LENGTH_SHORT).show()
-        }){}
-        queue.add(jsonObjectRequest)
+        })
 
 
     }
