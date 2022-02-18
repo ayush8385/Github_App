@@ -4,7 +4,7 @@
 
 <img src="https://github.com/ayush8385/Github_App/blob/master/assets/splash.png" alt="Splash Scree" height = "400" width = "200"/>
 
-# 1. Click on Add Repo to Add your Favourite Repository
+# 1. Click on Add Now to Add your Favourite Repository
 <p align="left">
   <img src="https://github.com/ayush8385/Github_App/blob/master/assets/main.png" alt="Splash Scree" height = "400" width = "200"/>
   <img src="https://github.com/ayush8385/Github_App/blob/master/assets/add.png" alt="Splash Scree" height = "400" width = "200"/>
