@@ -27,7 +27,7 @@
 <img src="https://github.com/ayush8385/Github_App/blob/master/assets/share.png" alt="Splash Scree" height = "400" width = "200"/>
 </p>
 
-## [Install Now]():
+## [Install Now](https://github.com/ayush8385/Github_App/blob/master/assets/app-debug.apk):
 
 
 ## 👇 Prerequisites
