@@ -1,4 +1,4 @@
-<h1 align="center"><img align="center" src="https://github.com/ayush8385/Github_App/blob/master/app/src/main/res/drawable-v24/logo.png" alt="animated" width = 7%/> Gramoday Assignment- Github Browser</h1>
+<h1 align="center"><img align="center" src="https://github.com/ayush8385/Github_App/blob/master/app/src/main/res/drawable-v24/logo.png" alt="animated" width = 7%/> Github Browser</h1>
 
 # An App to track your favourite repository from github
 
