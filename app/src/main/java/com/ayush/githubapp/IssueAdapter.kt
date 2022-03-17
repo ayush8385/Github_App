@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ayush.githubapp.Model.Branches
 import com.ayush.githubapp.Model.Issues
 import com.ayush.githubapp.Model.Repos
-import com.ayush.hungreed.database.ReposEntity
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 

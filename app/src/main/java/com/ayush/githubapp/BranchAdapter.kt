@@ -12,8 +12,6 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ayush.githubapp.Model.Branches
-import com.ayush.githubapp.Model.Repos
-import com.ayush.hungreed.database.ReposEntity
 
 class BranchAdapter(val context: Context) : RecyclerView.Adapter<BranchAdapter.HomeViewHolder>(){
     val itemlist= arrayListOf<Branches>()

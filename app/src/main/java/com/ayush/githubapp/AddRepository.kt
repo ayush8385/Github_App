@@ -12,9 +12,8 @@ import android.widget.Toolbar
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.ayush.githubapp.Model.Repos
-import com.ayush.hungreed.database.ReposEntity
-import com.digitalhain.daipsisearch.Activities.Room.ReposViewModel
+import com.ayush.githubapp.database.ReposEntity
+import com.ayush.githubapp.database.ReposViewModel
 
 
 class AddRepository : AppCompatActivity() {

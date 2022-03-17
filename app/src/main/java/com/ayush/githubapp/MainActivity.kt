@@ -15,16 +15,8 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.android.volley.Response
-import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.StringRequest
-import com.android.volley.toolbox.Volley
-import com.ayush.githubapp.Model.Repos
-import com.ayush.hungreed.database.ReposEntity
-import com.digitalhain.daipsisearch.Activities.Room.ReposViewModel
-import org.json.JSONArray
-import java.lang.reflect.Method
-import java.util.ArrayList
+import com.ayush.githubapp.database.ReposEntity
+import com.ayush.githubapp.database.ReposViewModel
 
 class MainActivity : AppCompatActivity() {
     lateinit var addRepo:Button
@@ -82,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 //        queue.add(jsonObjectRequest)
 
 
-        ReposViewModel(application).allRepos.observe(this, Observer {list->
+        ReposViewModel(application).allRepos.observe(this, Observer { list->
             list?.let {
 
                 listrepos.clear()

@@ -1,11 +1,9 @@
-package com.digitalhain.daipsisearch.Activities.Room
+package com.ayush.githubapp.database
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.ayush.hungreed.database.ReposDatabase
-import com.ayush.hungreed.database.ReposEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

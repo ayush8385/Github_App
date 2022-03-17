@@ -1,8 +1,6 @@
-package com.digitalhain.daipsisearch.Activities.Room
+package com.ayush.githubapp.database
 
 import androidx.lifecycle.LiveData
-import com.ayush.hungreed.database.ReposDao
-import com.ayush.hungreed.database.ReposEntity
 
 class ReposRepository(private val repoDao: ReposDao) {
     val allRepos: LiveData<List<ReposEntity>> = repoDao.getAllRepos()

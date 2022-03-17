@@ -14,15 +14,15 @@ import com.android.volley.toolbox.Volley
 import com.ayush.githubapp.Model.Branches
 import com.ayush.githubapp.Model.Commit
 import com.ayush.githubapp.Model.Repos
-import com.ayush.hungreed.database.ReposEntity
-import com.digitalhain.daipsisearch.Activities.Room.ReposViewModel
+import com.ayush.githubapp.database.ReposEntity
+import com.ayush.githubapp.database.ReposViewModel
 
 class Commits : AppCompatActivity() {
 
     lateinit var recyclerView: RecyclerView
     lateinit var layoutManager: RecyclerView.LayoutManager
     lateinit var commitAdapter:CommitAdapter
-    lateinit var repoDetail:ReposEntity
+    lateinit var repoDetail: ReposEntity
 
     var commitlist = arrayListOf<Commit>()
 

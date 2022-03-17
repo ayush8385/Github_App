@@ -11,7 +11,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ayush.githubapp.Model.Repos
-import com.ayush.hungreed.database.ReposEntity
+import com.ayush.githubapp.database.ReposEntity
 
 class RepoAdapter(val context: Context,val itemlist:ArrayList<ReposEntity>) : RecyclerView.Adapter<RepoAdapter.HomeViewHolder>(){
     class HomeViewHolder(view: View): RecyclerView.ViewHolder(view){

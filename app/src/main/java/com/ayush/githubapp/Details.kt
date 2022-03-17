@@ -19,14 +19,13 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.ayush.githubapp.Model.Branches
 import com.ayush.githubapp.Model.Issues
-import com.ayush.hungreed.database.ReposEntity
-import com.digitalhain.daipsisearch.Activities.Room.ReposViewModel
-import org.w3c.dom.Text
+import com.ayush.githubapp.database.ReposEntity
+import com.ayush.githubapp.database.ReposViewModel
 
 class Details : AppCompatActivity() {
     lateinit var repoName:TextView
     lateinit var repoDesc:TextView
-    lateinit var repoDetail:ReposEntity
+    lateinit var repoDetail: ReposEntity
 
     lateinit var getBranch:Button
     lateinit var issues:Button

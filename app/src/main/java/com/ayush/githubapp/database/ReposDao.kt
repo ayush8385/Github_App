@@ -1,4 +1,4 @@
-package com.ayush.hungreed.database
+package com.ayush.githubapp.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
